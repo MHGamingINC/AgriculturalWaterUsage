@@ -2,6 +2,7 @@ document.getElementById("myButton").addEventListener("click", calculate);
 
 function calculate(waterUsageDict, cropYieldDict, crop, acres){
     alert("hello");
+    document.getElementById("outputValue").textContent = "cool.";
     return waterUsageDict.crop * cropYieldDict.crop * acres;
 }
 
@@ -16,6 +17,8 @@ const cropWaterUsage = {
 }
 
 const cropYieldsPerAcre = {
+    // Source: https://goodineverygrain.ca/2021/08/26/how-many-pounds-of-grain-can-one-acre-produce/
+    // Measurements in tons/acre
     corn: 4.14,
     wheat: 2.3,
     soy: 1.27,
