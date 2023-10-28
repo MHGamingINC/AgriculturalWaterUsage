@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Agricultural Water Usage Calculator</h1>
+    <div class="calculator-container">
+        <h1 class="title">Agricultural Water Usage Calculator</h1>
+        <div class="info-container">
+            <div class="input-container">
+                <h3 class="input-title">Input Information Here:</h3>
+                <div class="input-form">
+                    <form id="form">
+                        <label for = "fieldSize">Field Size In Acres:</label><br>
+                        <input type="number" name="fieldSize" id = "fieldSize"></input><br>
+                        <label for="cropType">Select Crop Type:</label><br>
+                        <select name="cropType" id="cropType">
+                            <option value="" selected>Select a Crop Type</option>
+                            <option value="corn">Corn</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="soy">Soy</option>
+                            <option value="potatoes">Potatoes</option>
+                            <option value="rice">Rice</option>
+                        </select><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="output-container">
+                <h3 class="output-title">This is your total water usage:</h3>
+                <div class="output-number">
+                    <p>Hi</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="input-form">
-        <form id="form">
-            <label for = "fieldSize">Input Field Size In Acres:</label><br>
-            <input type="number" name="fieldSize" id = "fieldSize"></input><br>
-            <label for="cropType">Select Crop Type from Dropdown:</label><br>
-            <select name="cropType" id="cropType">
-                <option value="" selected>Select a Crop Type</option>
-                <option value="corn">Corn</option>
-                <option value="wheat">Wheat</option>
-                <option value="soy">Soy</option>
-                <option value="potatoes">Potatoes</option>
-                <option value="rice">Rice</option>
-            </select><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
 
     
 </body>

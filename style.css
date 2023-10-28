@@ -5,8 +5,85 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(97, 130, 100)
 }
 
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.title{
+    text-align: center;
+    background-color: rgb(0, 85, 0);
+
+}
+
+.calculator-container{
+    height: 75vh;
+    margin: 12.5vh 12.5vw;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgb(121, 172, 120)
+}
+
+.calculator-container > *{
+    background-color: transparent;
+}
+
+.info-container{
+    display: flex;
+    padding: 1rem 0;
+    gap: 1rem;
+    height: 85%;
+}
+
+.input-container{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(176, 217, 177);
+    border-radius: 1rem;
+}
+
+.input-container > *{
+    background-color: transparent;
+}
+
+.input-form >*{
+    background-color: transparent;
+}
+
+#form > *{
+    background-color: transparent;
+}
+
+.output-container > *{
+    background-color: transparent;
+}
+
+
+.input-title{
+    text-align: center;
+}
+
+.output-title{
+    text-align: center;
+}
+
+.output-container{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(176, 217, 177);
+    border-radius: 1rem;
+}
+
+.output-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
