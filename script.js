@@ -1,7 +1,12 @@
 document.getElementById("myButton").addEventListener("click", calculate);
 
-function calculate(crop, acres){
-  const cropWaterUsage = {
+function calculate(waterUsageDict, cropYieldDict, crop, acres){
+    alert("hello");
+    document.getElementById("outputValue").textContent = "cool.";
+    return waterUsageDict.crop * cropYieldDict.crop * acres;
+}
+
+const cropWaterUsage = {
     // Source: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://hess.copernicus.org/articles/15/1577/2011/hess-15-1577-2011.pdf
     // Measurements in m^3/ton
     corn : 1222,
