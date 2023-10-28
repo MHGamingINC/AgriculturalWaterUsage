@@ -116,3 +116,7 @@ body{
     align-items: center;
     height: 100%;
 }
+
+p{
+    background: transparent;
+}
