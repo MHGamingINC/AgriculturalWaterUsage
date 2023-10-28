@@ -1,4 +1,7 @@
+document.getElementById("myButton").addEventListener("click", calculate);
+
 function calculate(waterUsageDict, cropYieldDict, crop, acres){
+    alert("hello");
     return waterUsageDict.crop * cropYieldDict.crop * acres;
 }
 
