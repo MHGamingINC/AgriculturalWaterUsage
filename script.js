@@ -1,10 +1,6 @@
 document.getElementById("myButton").addEventListener("click", calculate);
 
-function calculate(waterUsageDict, cropYieldDict, crop, acres){
-    alert("hello");
-    document.getElementById("outputValue").textContent = "cool.";
-    return waterUsageDict.crop * cropYieldDict.crop * acres;
-}
+function calculate(){
 
 const cropWaterUsage = {
     // Source: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://hess.copernicus.org/articles/15/1577/2011/hess-15-1577-2011.pdf
