@@ -29,7 +29,8 @@ const cropYieldsPerAcre = {
 
     document.getElementById("outputValue").textContent = (cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 + " Gallons");
     var outputValue = document.getElementById("outputValue");
-    outputValue.style.fontSize = "250px";
+    var outputNumber = cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 * .002;
+    outputValue.style.fontSize = outputNumber + "px";
 
 
 }
