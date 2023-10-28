@@ -1,10 +1,6 @@
 document.getElementById("myButton").addEventListener("click", calculate);
 
-function calculate(waterUsageDict, cropYieldDict, crop, acres){
-    alert("hello");
-    document.getElementById("outputValue").textContent = "cool.";
-    return waterUsageDict.crop * cropYieldDict.crop * acres;
-}
+function calculate(){
 
 const cropWaterUsage = {
     // Source: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://hess.copernicus.org/articles/15/1577/2011/hess-15-1577-2011.pdf
@@ -28,36 +24,8 @@ const cropYieldsPerAcre = {
 
     selectElement = document.querySelector('#cropType');
     cropType1 = selectElement.value;
-    alert(cropType1);
     selectElement1 = document.querySelector('#fieldSize');
     fieldSize1 = selectElement1.value;
-    alert(fieldSize1);
-    alert(cropWaterUsage[cropType1]);
-    alert(cropYieldsPerAcre[cropType1] * fieldSize1);
 
-    document.getElementById("outputValue").textContent = (cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1);
-
-
-
-
-
-
-let cropForm = document.getElementById("form");
-
-cropForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-  
-    let fieldSize = document.getElementById("fieldSize");
-    let cropType = document.getElementById("cropType");
-  
-    if (fieldSize.value == "" || cropType.value == "") {
-      alert("Ensure you input a value in both fields!");
-    } 
-    else {
-      // perform operation with form input
-      alert("This form has been successfully submitted!");
-      console.log(
-        `This form has a field size of ${fieldSize.value} and crop type of ${cropType.value}`
-      );
-    }
-  });
+    document.getElementById("outputValue").textContent = (cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 + " Gallons");
+}
