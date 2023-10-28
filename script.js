@@ -19,3 +19,23 @@ const cropYieldsPerAcre = {
     potatoes: 10,
     rice: 3.69
 }
+
+let cropForm = document.getElementById("form");
+
+cropForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+    let fieldSize = document.getElementById("fieldSize");
+    let cropType = document.getElementById("cropType");
+  
+    if (fieldSize.value == "" || cropType.value == "") {
+      alert("Ensure you input a value in both fields!");
+    } 
+    else {
+      // perform operation with form input
+      alert("This form has been successfully submitted!");
+      console.log(
+        `This form has a field size of ${fieldSize.value} and crop type of ${cropType.value}`
+      );
+    }
+  });
