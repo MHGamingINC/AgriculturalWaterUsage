@@ -36,7 +36,7 @@ const cropYieldsPerAcre = {
     alert(cropYieldsPerAcre[cropType1] * fieldSize1);
 
     document.getElementById("outputValue").textContent = (cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1);
-}
+
 
 
 
