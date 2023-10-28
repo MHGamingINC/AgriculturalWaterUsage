@@ -4,6 +4,10 @@ function calculate(){
 }
 
 const cropWaterUsage = {
-    corn : 100,
-    rice : 120,
+    // Measurements in m^3/ton
+    corn : 1222,
+    wheat : 1827,
+    soy: 2145,
+    potatoes: 224,
+    rice: 1673,
 }
