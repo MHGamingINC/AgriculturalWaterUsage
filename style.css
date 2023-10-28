@@ -44,7 +44,7 @@ body{
 
 .input-container{
     width: 50%;
-    height: 65vh;
+    height: 95%;
     padding: 1rem;
     gap: 1rem;
     background-color: rgb(176, 217, 177);
@@ -58,11 +58,23 @@ body{
     background-color: transparent;
 }
 
+
 .input-form{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+#myButton{
+    background-color: rgb(97, 130, 100);
 }
 
 .input-form >*{
@@ -88,7 +100,7 @@ body{
 
 .output-container{
     width: 50%;
-    height: 65vh;
+    height: 95%;
     padding: 1rem;
     gap: 1rem;
     background-color: rgb(176, 217, 177);
@@ -105,6 +117,6 @@ body{
     height: 100%;
 }
 
-p{
+h3{
     background-color: transparent;
 }
