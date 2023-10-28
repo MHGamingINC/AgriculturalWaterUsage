@@ -11,13 +11,24 @@
         <h1>Agricultural Water Usage Calculator</h1>
     </div>
 
-    <div>
+    <div class="input-form">
         <form id="form">
             <label for = "fieldSize">Input Field Size In Acres:</label><br>
-            <input id = "fieldSize"></input><br>
-            <input type = "submit" name = "submit">
+            <input type="number" name="fieldSize" id = "fieldSize"></input><br>
+            <label for="cropType">Select Crop Type from Dropdown:</label><br>
+            <select name="cropType" id="cropType">
+                <option value="" selected>Select a Crop Type</option>
+                <option value="corn">Corn</option>
+                <option value="wheat">Wheat</option>
+                <option value="soy">Soy</option>
+                <option value="potatoes">Potatoes</option>
+                <option value="rice">Rice</option>
+            </select><br>
+            <button type="submit">Submit</button>
         </form>
     </div>
+
+
     
 </body>
 </html>
