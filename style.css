@@ -117,6 +117,10 @@ body{
     height: 100%;
 }
 
-#outputValue{
+p{
+    background: transparent;
+}
+
+#outValues{
     background: transparent;
 }

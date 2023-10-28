@@ -2,6 +2,9 @@ document.getElementById("myButton").addEventListener("click", calculate);
 
 function calculate(){
 
+const MAX_VALUE = 100;
+const MIN_VALUE = 10;
+
 const cropWaterUsage = {
     // Source: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://hess.copernicus.org/articles/15/1577/2011/hess-15-1577-2011.pdf
     // Measurements in m^3/ton
@@ -27,10 +30,15 @@ const cropYieldsPerAcre = {
     selectElement1 = document.querySelector('#fieldSize');
     fieldSize1 = selectElement1.value;
 
-    document.getElementById("outputValue").textContent = (cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 + " Gallons");
+    document.getElementById("outputValue").textContent = (Math.round(cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1));
+    document.getElementById("gallonWord").textContent = "Gallons"
     var outputValue = document.getElementById("outputValue");
-    var outputNumber = cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 * .002;
+    var outputNumber = 50;
+    // cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 * .002
     outputValue.style.fontSize = outputNumber + "px";
+    outputValue.style.textAlign = "center";
+    gallonWord.style.fontSize = outputNumber + "px";
+    gallonWord.style.textAlign = "center";
 
 
 }
