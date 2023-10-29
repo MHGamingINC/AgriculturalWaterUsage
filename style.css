@@ -5,8 +5,125 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(97, 130, 100)
 }
 
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    text-align: center;
+    background-color: rgb(0, 85, 0);
+
+}
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75vh;
+    margin: 12.5vh 12.5vw;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgb(121, 172, 120)
+}
+
+.calculator-container > *{
+    background-color: transparent;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    height: 100%;
+}
+
+.input-container{
+    width: 50%;
+    height: 95%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(176, 217, 177);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-container > *{
+    background-color: transparent;
+}
+
+
+.input-form{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+#myButton{
+    background-color: rgb(97, 130, 100);
+}
+
+.input-form >*{
+    background-color: transparent;
+}
+
+#form > *{
+    background-color: transparent;
+}
+
+.output-container > *{
+    background-color: transparent;
+}
+
+
+.input-title{
+    text-align: center;
+}
+
+.output-title{
+    text-align: center;
+}
+
+.output-container{
+    width: 50%;
+    height: 95%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(176, 217, 177);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.output-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+p{
+    background: transparent;
+    flex-wrap: wrap;
+}
+
+#outValues{
+    background: transparent;
+    flex-wrap: wrap;
 }
