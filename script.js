@@ -30,8 +30,8 @@ const cropYieldsPerAcre = {
     selectElement1 = document.querySelector('#fieldSize');
     fieldSize1 = selectElement1.value;
 
-    document.getElementById("outputValue").textContent = (Math.round(cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1));
-    document.getElementById("gallonWord").textContent = "Gallons"
+    document.getElementById("outputValue").textContent = (Math.round(cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 * 264.1720523581));
+    document.getElementById("gallonWord").textContent = "Gallons Per Acre"
     var outputValue = document.getElementById("outputValue");
     var outputNumber = 50;
     // cropWaterUsage[cropType1] * cropYieldsPerAcre[cropType1] * fieldSize1 * .002
